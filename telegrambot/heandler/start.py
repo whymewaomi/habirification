@@ -8,7 +8,7 @@ startbot = Router()
 
 startbot.message(Command("start"))
 async def startanswer(message: Message):
-    await message.answer("Привет! \nДля того чтобы пользоваться ботом нужно"
-                         "\nзарегистрироваться или войти в"
+    await message.answer("Привет! \nДля того чтобы пользоваться ботом нужно",
+                         "\nзарегистрироваться или войти в",
                          "\nсвой аккаунт", reply_markup=kb.start())
     
